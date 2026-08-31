@@ -15,29 +15,33 @@ Continuous Integration (CI), Continuous Delivery (CD), and Continuous Deployment
 
 ## Difference Between Continuous Integration, Continuous Delivery, and Continuous Deployment
 
+
+
 | Feature | Continuous Integration (CI) | Continuous Delivery (CD) | Continuous Deployment (CD) |
 
-|---|---|---|---|
+| :--- | :--- | :--- | :--- |
 
-| Definition | Frequently integrates code changes into a shared repository and automatically builds and tests the code. | Automatically prepares the application for release after successful builds and tests. | Automatically deploys the application to production after all required checks pass. |
+| **Definition** | Frequently integrates code changes into a shared repository and automatically builds and tests the code. | Automatically prepares the application for release after successful builds and tests. | Automatically deploys the application to production after all required checks pass. |
 
-| Main Goal | Detect and fix integration issues early. | Keep the application ready for production release at any time. | Deliver new features and fixes to users as quickly as possible. |
+| **Main Goal** | Detect and fix integration issues early. | Keep the application ready for production release at any time. | Deliver new features and fixes to users as quickly as possible. |
 
-| Build | Automated | Automated | Automated |
+| **Build** | Automated | Automated | Automated |
 
-| Testing | Automated | Automated | Automated |
+| **Testing** | Automated | Automated | Automated |
 
-| Staging Deployment | Optional | Usually automated | Usually automated |
+| **Staging Deployment** | Optional | Usually automated | Usually automated |
 
-| Production Deployment | Manual | Manual after approval | Fully automated |
+| **Production Deployment** | Manual | Manual after approval | Fully automated |
 
-| Manual Approval | Not applicable | Usually required | Not required |
+| **Manual Approval** | Not applicable | Usually required | Not required |
 
-| Human Intervention | Required mainly for development and code changes | Required before production release | Minimal; deployment is automated |
+| **Human Intervention** | Required mainly for development and code changes | Required before production release | Minimal; deployment is automated |
 
-| Release Speed | Fast integration and feedback | Fast and controlled releases | Fastest release process |
+| **Release Speed** | Fast integration and feedback | Fast and controlled releases | Fastest release process |
 
-| Example Tools | GitHub Actions, Jenkins, GitLab CI | GitHub Actions, Jenkins, GitLab CI | GitHub Actions, Jenkins, GitLab CI/CD |
+| **Example Tools** | GitHub Actions, Jenkins, GitLab CI | GitHub Actions, Jenkins, GitLab CI | GitHub Actions, Jenkins, GitLab CI/CD |
+
+
 
 ## 1. Continuous Integration (CI)
 
