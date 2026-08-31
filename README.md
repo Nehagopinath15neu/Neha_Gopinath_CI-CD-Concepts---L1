@@ -13,159 +13,31 @@ Delivery, and Continuous Deployment.
 
 Continuous Integration (CI), Continuous Delivery (CD), and Continuous Deployment are DevOps practices that automate different stages of the software development and release process. Although they are closely related, each has a different purpose.
 
-|  
-Feature
+## Difference Between Continuous Integration, Continuous Delivery, and Continuous Deployment
 
-|
+| Feature | Continuous Integration (CI) | Continuous Delivery (CD) | Continuous Deployment (CD) |
 
-Continuous Integration (CI)
+|---|---|---|---|
 
-|
+| Definition | Frequently integrates code changes into a shared repository and automatically builds and tests the code. | Automatically prepares the application for release after successful builds and tests. | Automatically deploys the application to production after all required checks pass. |
 
-Continuous Delivery (CD)
+| Main Goal | Detect and fix integration issues early. | Keep the application ready for production release at any time. | Deliver new features and fixes to users as quickly as possible. |
 
-|
+| Build | Automated | Automated | Automated |
 
-Continuous Deployment (CD)
+| Testing | Automated | Automated | Automated |
 
-|  
-| --- | --- | --- | --- |  
-|
+| Staging Deployment | Optional | Usually automated | Usually automated |
 
-Definition
+| Production Deployment | Manual | Manual after approval | Fully automated |
 
-|
+| Manual Approval | Not applicable | Usually required | Not required |
 
-Frequently integrates code changes into a shared repository with automated builds and tests.
+| Human Intervention | Required mainly for development and code changes | Required before production release | Minimal; deployment is automated |
 
-|
+| Release Speed | Fast integration and feedback | Fast and controlled releases | Fastest release process |
 
-Automatically prepares the application for release after successful builds and tests.
-
-|
-
-Automatically releases the application to production after all tests pass.
-
-|  
-|
-
-Main Goal
-
-|
-
-Detect and fix integration issues early.
-
-|
-
-Keep the application ready for production at any time.
-
-|
-
-Deliver new features to users automatically and quickly.
-
-|  
-|
-
-Build Process
-
-|
-
-Automated
-
-|
-
-Automated
-
-|
-
-Automated
-
-|  
-|
-
-Testing
-
-|
-
-Automated unit and integration tests
-
-|
-
-Automated testing
-
-|
-
-Automated testing
-
-|  
-|
-
-Deployment to Staging
-
-|
-
-Optional
-
-|
-
-Automatic
-
-|
-
-Automatic
-
-|  
-|
-
-Deployment to Production
-
-|
-
-Manual
-
-|
-
-Manual after approval
-
-|
-
-Fully automatic
-
-|  
-|
-
-Manual Approval
-
-|
-
-Not required
-
-|
-
-Required before production deployment
-
-|
-
-Not required
-
-|  
-|
-
-Best Used When
-
-|
-
-Teams frequently merge code changes.
-
-|
-
-Organizations want control over production releases.
-
-|
-
-Organizations want fast, fully automated software releases.
-
-|
+| Example Tools | GitHub Actions, Jenkins, GitLab CI | GitHub Actions, Jenkins, GitLab CI | GitHub Actions, Jenkins, GitLab CI/CD |
 
 ## 1. Continuous Integration (CI)
 
@@ -186,6 +58,8 @@ Example workflow:
 4. Automated tests are executed.
 5. Developers receive immediate feedback.
 
+
+
 ## 2. Continuous Delivery (CD)
 
 Continuous Delivery builds on Continuous Integration by ensuring the application is always ready for release. After the build and testing stages, the application is automatically deployed to a staging environment. However, production deployment requires manual approval.
@@ -203,6 +77,8 @@ Example workflow:
 2. Application is deployed to staging.
 3. A manager or DevOps engineer reviews the release.
 4. After approval, the application is deployed to production.
+
+
 
 ## 3. Continuous Deployment
 
@@ -222,11 +98,15 @@ Example workflow:
 3. Quality and security checks are completed.
 4. The application is automatically deployed to production.
 
+
+
 ## Summary
 
 - Continuous Integration (CI): Automatically builds and tests code whenever developers make changes.
 - Continuous Delivery (CD): Automatically prepares the application for release, but production deployment requires manual approval.
 - Continuous Deployment: Automatically deploys the application to production after all automated checks pass, with no manual approval required.
+
+
 
 ### Simple Flow Diagram
 
